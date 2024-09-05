@@ -1,0 +1,871 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-color:  #0cada5;
+    --body-alter-color: #109499;
+    --main-color: #09a6b1;
+    --hover-color: #099191;
+    --container-color: #0c8383;
+    --text-color: #fdfdfd;
+    --text-alter-color: #000000;
+}
+
+
+body {
+  background-image: url("https://i.ytimg.com/vi/BSS2KLoMCz8/maxresdefault.jpg");
+  background-position: center;
+}
+
+nav {
+  background-image: url("https://th.bing.com/th/id/R.9cceedb85aa7fdbe60f3512da07ee5bf?rik=FKVEqpxE0pX1Ew&riu=http%3a%2f%2fs1.bwallpapers.com%2fwallpapers%2f2014%2f01%2f22%2fback-wallpaper-2014_044625307.jpg&ehk=XBuQvAmyQ9%2fQpnR%2flfc2eHizMaBJRz00N5ptUK8U%2b%2bk%3d&risl=&pid=ImgRaw&r=0");
+  background-position: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+nav{
+    background-color: var(--container-color);
+    height: 86px;
+    border-bottom: 3.5px solid var(--main-color);
+}
+
+nav > .container {
+    max-width: 1230px  ;
+}
+
+
+.navbar-brand {
+    font-weight: 600;
+    font-size:1.1rem  ;
+}
+
+.navbar-brand > span,.home-info > h1 >span {
+    color: var(--main-color)
+}
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav a{
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+}
+
+.navbar-nav a::after {
+position: absolute;
+content: "";
+width:0px;
+background-color: var(--main-color);
+height: 3px;
+left: 0;
+bottom: 0;
+transition: all .4s ease;
+}
+
+.navbar-nav a:hover::after{
+    width:100%;
+}
+.btns {
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: var(--main-color);
+    cursor: pointer;
+    outline: none;
+    color: var(--text-color);
+    border: none;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+
+}
+.btns:hover {
+    background-color: var(--hover-color);
+}
+.btns i {
+    font-size: 1.2rem;
+}
+
+
+
+.home {
+background: rgb(0, 0, 0);
+background: linear-gradient(130deg, rgba(50, 92, 92, 0.788) 51%, rgba(1, 65, 77, 0) 87%), url("./img/home-1.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+.home-info {
+    width: 35%;
+    min-width: 280px;
+    position: relative;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, .1) ;
+    
+}
+
+.home-info::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+.home-info h1 {
+font-weight: 700;
+color: var(--text-color);
+font-size: 2.2rem;
+}
+
+p {
+    color: var(--text-color);
+    font-size: .9rem;
+}
+
+.home-info button {
+    font-size: 1rem;
+}
+
+
+h2 {
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+h2::after{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    content: "";
+    width: 50px;
+    height: 3.5px;
+    background-color: var(--main-color);
+}
+
+.card { 
+    background-color: var(--container-color)  ;
+    cursor: pointer;
+    transition: all .2s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+
+}
+
+.card:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
+    transform: scale(.95);
+}
+
+
+.card h5,p {
+    color: var(--text-color)
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+
+.card > i {
+    font-size: 1.7rem;
+    background-color: var(--main-color) ;
+    padding: .7rem;
+    color: var(--text-color);
+    border-radius: 3px;
+}
+
+.card a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+
+.container {
+    max-width:1100px   ;
+}
+
+.faq-info, .question-info {
+    position: relative;
+}
+
+.faq-info h3,.question-info h3,.panel-info h3 {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.faq-info::after,.question-info::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+
+
+
+.accordion-item {
+    border: none  ;
+
+}
+
+.accordion-button {
+background-color: var(--container-color) !important  ;
+color: var(--text-color) !important   ;
+border-radius: 0  !important ;
+}
+
+.accordion-button::after {
+    background-image: none ;
+    content: "+"  ;
+    color: var(--text-color) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.accordion-body {
+    background-color: var(--main-color);
+    color: var(--text-color) ;
+}
+
+
+.accordion-button:focus {
+   box-shadow: 0px -7px 0px -3px var(--main-color) ;
+}
+
+.panel-info,.panel-wrapper {
+    width: max-content;
+}
+
+.panel-item i {
+    color: var(--main-color);
+}
+
+.control-panel {
+    background-color: var(--container-color);
+}
+.control-panel img {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
+}
+
+.footer span {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+letter-spacing: .5rem;
+}
+
+.social-media-icon i {
+    color:var(--text-color) ;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.footer-nav,.footer-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.footer-nav a, .social-media-icon i {
+    transition: all .4s ease;
+}
+
+.footer-nav a:hover, .social-media-icon i:hover {
+    color: var(--main-color);
+}
+
+.footer-cop {
+    border-top: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+.pay-methods {
+font-size: 1.4rem;
+}
+
+.pay-methods i  {
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+    
+
+.container {
+    max-width: 650px !important;
+}
+
+.navbar-nav {
+    margin-left: 0;
+    width: 100%;
+}
+
+.navbar-nav > .btns {
+margin-top: 3rem;
+width: 100%;
+justify-content: center;
+margin-left: 0 !important;
+}
+
+.btn-close {
+    background-image: none;
+    display: flex;
+    align-items: center;
+justify-content: center;
+opacity: 1;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.offcanvas-header {
+    width: 100%;
+
+}
+.btn-close i {
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+.btn-close i:hover {
+color: var(--hover-color);
+}
+
+.nav-link {
+    mmargin-bottom:1rem;
+}
+
+
+
+.navbar-toggler-icon {
+    background-image: none;
+    font-size: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+}
+
+.navbar-collapse {
+    background: rgb(23,27,68);
+    background: linear-gradient(180deg, rgba(23,27,68,1) 0%, rgba(23,27,68,0.8996848739495799) 60%, rgba(255,77,85,1) 100%);
+    padding: 1rem;
+}
+
+.navbar-toggler:focus{
+box-shadow: none;
+}
+
+.navbar-toggler {
+border: none;
+    padding: 0;
+}
+
+
+}
+
+
+@media screen and (max-width:765px) {
+
+    .container {
+        max-width: 500px !important;
+    }
+    
+    }
+
+
+/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by cssbuttons-io */ 
+/* From Uiverse.io by Web-Potato */ 
+/* From Uiverse.io by marcelodolza */ 
+/* From Uiverse.io by Allyhere */ 
+/* From Uiverse.io by Kabak */ 
+button {
+    height: 50px;
+    margin: 5px;
+    width: 120px;
+    background: #333;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #08ad9f 1px;
+    font-size: 16px;
+    color: rgb(11, 223, 223);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #07d3da, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #03b4a5, 5px 5px 15px #34e9da,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  }
+  
+  button:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  button:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+  
+
+/* From Uiverse.io by iZOXVL */ 
+.boton-elegante {
+    padding: 15px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  .boton-elegante::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .boton-elegante:hover::after {
+    transform: scale(4);
+  }
+  
+  .boton-elegante:hover {
+    border-color: #666666;
+    background: #292929;
+  }
+  
+
+/* From Uiverse.io by iconicchandu */ 
+.card {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(240, 15%, 9%);
+    --paragraph: hsl(0, 0%, 83%);
+    --line: hsl(240, 9%, 17%);
+    --primary: hsl(189, 92%, 58%);
+  
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    padding: 1rem;
+    width: 19rem;
+    background-color: hsla(240, 15%, 9%, 1);
+    background-image: radial-gradient(
+        at 88% 40%,
+        hsla(240, 15%, 9%, 1) 0px,
+        transparent 85%
+      ),
+      radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+      radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+      radial-gradient(at 0% 64%, hsl(189, 99%, 26%) 0px, transparent 85%),
+      radial-gradient(at 41% 94%, hsl(189, 97%, 36%) 0px, transparent 85%),
+      radial-gradient(at 100% 99%, hsl(188, 94%, 13%) 0px, transparent 85%);
+  
+    border-radius: 1rem;
+    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+  }
+  
+  .card .card__border {
+    overflow: hidden;
+    pointer-events: none;
+  
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: linear-gradient(
+      0deg,
+      hsl(0, 0%, 100%) -50%,
+      hsl(0, 0%, 40%) 100%
+    );
+  
+    border-radius: 1rem;
+  }
+  
+  .card .card__border::before {
+    content: "";
+    pointer-events: none;
+  
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), rotate(0deg);
+    transform-origin: left;
+  
+    width: 200%;
+    height: 10rem;
+    background-image: linear-gradient(
+      0deg,
+      hsla(0, 0%, 100%, 0) 0%,
+      hsl(189, 100%, 50%) 40%,
+      hsl(189, 100%, 50%) 60%,
+      hsla(0, 0%, 40%, 0) 100%
+    );
+  
+    animation: rotate 8s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card .card_title__container .card_title {
+    font-size: 1rem;
+    color: var(--white);
+  }
+  
+  .card .card_title__container .card_paragraph {
+    margin-top: 0.25rem;
+    width: 65%;
+  
+    font-size: 0.5rem;
+    color: var(--paragraph);
+  }
+  
+  .card .line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--line);
+  
+    border: none;
+  }
+  
+  .card .card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .card .card__list .card__list_item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .card .card__list .card__list_item .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--primary);
+  
+    border-radius: 50%;
+  }
+  
+  .card .card__list .card__list_item .check .check_svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  
+    fill: var(--black);
+  }
+  
+  .card .card__list .card__list_item .list_text {
+    font-size: 0.75rem;
+    color: var(--white);
+  }
+  
+  .card .button {
+    cursor: pointer;
+  
+    padding: 0.5rem;
+    width: 100%;
+    background-image: linear-gradient(
+      0deg,
+      hsl(189, 92%, 58%),
+      hsl(189, 99%, 26%) 100%
+    );
+  
+    font-size: 0.75rem;
+    color: var(--white);
+  
+    border: 0;
+    border-radius: 9999px;
+    box-shadow: inset 0 -2px 25px -4px var(--white);
+  }
+
+
+
+
+  /* From Uiverse.io by abrahamcalsin */ 
+.card-client {
+    background: #050300;
+    width: 13rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #09cad1;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .card-client:hover {
+    transform: translateY(-10px);
+  }
+  
+  .user-picture {
+    overflow: hidden;
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid #05cad1;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .user-picture svg {
+    width: 2.5rem;
+    fill: currentColor;
+  }
+  
+  .name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  
+  .social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #05c4b4;
+  }
+  
+  .social-media a {
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-media a:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media a svg {
+    width: 1.1rem;
+    fill: currentColor;
+  }
+  
+  /*-- Tooltip Social Media --*/
+  .tooltip-social {
+    background: #262626;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -90%);
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+  
+  .tooltip-social:after {
+    content: " ";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+  }
+  
+  .social-media a .tooltip-social:after {
+    border-top-color: #262626;
+  }
+  
+  .social-media a:hover .tooltip-social {
+    opacity: 1;
+    transform: translate(-50%, -130%);
+  }
+  
+
+
+/* From Uiverse.io by jeremyssocial */ 
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 6.2em;
+  } /* adjust width based on content */
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.terminal-loader {
+  border: 0.1em solid #333;
+  background-color: #1a1a1a;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  padding: 1.5em 1em;
+  width: 12em;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.terminal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background-color: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0 0.4em;
+  box-sizing: border-box;
+}
+
+.terminal-controls {
+  float: right;
+}
+
+.control {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.terminal-title {
+  float: left;
+  line-height: 1.5em;
+  color: #eee;
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green; /* Cursor */
+  animation: typeAndDelete 4s steps(11) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+  margin-top: 1.5em;
+}
+
+
+
