@@ -1,0 +1,206 @@
+/*----------------------------------------------
+    # banner style
+----------------------------------------------*/
+.banner-content {
+	.title {
+		text-transform: uppercase;
+		line-height: 1;
+		@media #{$lg}{
+			font-size: 65px;
+		}
+		@media #{$xs}{
+			font-size: 35px;
+		}
+		.light {
+			font-weight: 300;
+		}
+		.font-large {
+			display: block;
+			font-size: 110px;
+			@media #{$xl}{
+				font-size: 90px;
+			}
+			@media #{$lg}{
+				font-size: 75px;
+			}
+			@media #{$xs}{
+				font-size: 45px;
+			}
+		}
+		.line-img {
+			margin-top: -33px;
+		}
+	}
+	.sub-title {
+		font-size: 26px;
+		margin-top: 25px;
+		margin-bottom: 0;
+		@media #{$xs}{
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+	.btn {
+		margin-top: 45px;
+	}
+	.list-img {
+		margin-top: 70px;
+	}
+}
+
+.banner-img {
+	img {
+		margin-right: -80px;
+	}
+}
+
+.banner-area-1 {
+	padding: 250px 0 130px;
+	margin-top: 0px;
+	background-size: cover;
+	position: relative;
+	@media #{$xs}{
+		padding: 200px 0 130px;
+	}
+	.chain-style {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+	.banner-img {
+		position: relative;
+		.shape-img {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.shape-img-2 {
+			position: absolute;
+			left: -150px;
+			top: 50%;
+			opacity: 0.5;
+		}
+	}
+}
+
+.banner-area-2 {
+	padding: 250px 0;
+	margin-top: -100px;
+	background-size: 100% 100%;
+	@media #{$xs}{
+		padding: 200px 0 150px;
+	}
+	.banner-content {
+		.title {
+			.font-large {
+				font-size: 100px;
+				@media #{$xxl}{
+					font-size: 80px;
+				}
+				@media #{$lg}{
+					font-size: 70px;
+				}
+			}
+		}
+	}
+	.banner-img {
+		position: relative;
+		.animate-img-1 {
+			position: absolute;
+			left: 140px;
+			top: 0;
+		}
+		.animate-img-2 {
+			position: absolute;
+			right: 45px;
+    		top: 90px;
+		}
+		.animate-img-3 {
+			position: absolute;
+			left: -270px;
+			bottom: 50px;
+		}
+	}
+}
+
+
+//banner-area-3
+.banner-area-3 {
+	padding: 210px 0 170px;
+	margin-top: -100px;
+	.banner-content {
+		max-width: 860px;
+		margin: 0 auto;
+		.title {
+			border-top: 10px solid var(--main-color-one);
+			border-bottom: 10px solid var(--main-color-one);
+			display: inline-block;
+			font-size: 155px;
+			font-family: var(--jersey-font);
+			line-height: 0.8;
+			margin-bottom: 0;
+			@media #{$xs}{
+				font-size: 60px;
+				font-weight: 600;
+			}
+			span {
+				color: var(--main-color-one);
+			}
+		}
+		.sub-title {
+			border-bottom: 1px solid #202b23;
+			display: inline-block;
+			min-width: 550px;
+			padding-bottom: 20px;
+			@media #{$xs}{
+				width: 100%;
+				min-width: 100%;
+			}
+		}
+	}
+	.animate-img {
+		position: absolute;
+	}
+	.animate-img-1 {
+		position: absolute;
+		left: 120px;
+		top: 0;
+	}
+	.animate-img-2 {
+		position: absolute;
+		left: 200px;
+		top: 150px;
+	}
+	.animate-img-3 {
+		position: absolute;
+		left: 150px;
+		top: 340px;
+	}
+	.animate-img-4 {
+		position: absolute;
+		left: 140px;
+		bottom: 100px;
+	}
+
+	.animate-img-5 {
+		position: absolute;
+		right: 120px;
+		top: 0;
+	}
+	.animate-img-6 {
+		position: absolute;
+		right: 20px;
+		top: 50px;
+	}
+	.animate-img-7 {
+		position: absolute;
+		right: 160px;
+		top: 300px;
+	}
+	.animate-img-8 {
+		position: absolute;
+		right: 50px;
+		bottom: 200px;
+	}
+}

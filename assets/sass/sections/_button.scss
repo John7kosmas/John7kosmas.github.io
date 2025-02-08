@@ -1,0 +1,16 @@
+.read-more-arrow-text {
+    span {
+        background-color: #1c1c24;
+        border: 1px solid #202b37;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 8px;
+        svg {
+            width: 10px !important;
+        }
+    }
+}

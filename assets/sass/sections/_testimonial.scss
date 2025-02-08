@@ -1,0 +1,38 @@
+.single-testimonial-inner {
+	padding: 45px;
+	background: #141c26;
+	border-radius: 6px;
+	border: 1px solid #172128;
+	margin-bottom: 30px;
+	.date {
+		margin-bottom: 28px;
+		span {
+			color: #4c688b;
+		}
+	}
+	p {
+		font-weight: 500;
+		color: #a2a2a1;
+		margin-bottom: 30px;
+	}
+	.author {
+		.thumb {
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+			border: 2px solid #404e60;
+			overflow: hidden;
+			padding: 10px 0 0 5px;
+		}
+		.details {
+			.name {
+				text-transform: uppercase;
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+			.designation{
+				color: #a2a2a1;
+			}
+		}
+	}
+}
